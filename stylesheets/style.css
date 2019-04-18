@@ -1,0 +1,64 @@
+
+.circle-container {
+  position: relative;
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  padding: 0;
+  list-style: none;
+  margin: 5em auto 0;
+  border: solid 5px tomato;
+  transition: 1s;
+  transition-timing-function: linear;
+}
+/* line 17, ../sass/circle.scss */
+.circle-container > * {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -3em;
+  width: 6em;
+  height: 6em;
+}
+/* line 30, ../sass/circle.scss */
+.circle-container > *:nth-of-type(1) {
+  transform: rotate(0deg) translate(10em) rotate(0deg);
+}
+/* line 30, ../sass/circle.scss */
+.circle-container > *:nth-of-type(2) {
+  transform: rotate(60deg) translate(10em) rotate(-60deg);
+}
+/* line 30, ../sass/circle.scss */
+.circle-container > *:nth-of-type(3) {
+  transform: rotate(120deg) translate(10em) rotate(-120deg);
+}
+/* line 30, ../sass/circle.scss */
+.circle-container > *:nth-of-type(4) {
+  transform: rotate(180deg) translate(10em) rotate(-180deg);
+}
+/* line 30, ../sass/circle.scss */
+.circle-container > *:nth-of-type(5) {
+  transform: rotate(240deg) translate(10em) rotate(-240deg);
+}
+/* line 30, ../sass/circle.scss */
+.circle-container > *:nth-of-type(6) {
+  transform: rotate(300deg) translate(10em) rotate(-300deg);
+}
+
+/* line 44, ../sass/circle.scss */
+.circle-container img {
+  display: block;
+  /* max-width: 100%; */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /* filter: grayscale(100%); */
+  border: solid 5px tomato;
+  transition: 1s;
+  transition-timing-function: linear;
+}
+/* line 52, ../sass/circle.scss */
+/* .circle-container img:hover {
+  filter: grayscale(0);
+} */
