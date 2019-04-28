@@ -1,64 +1,236 @@
 
+
+.bread-title {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 26px;
+  font-style: italic;
+  text-align: center;
+}
+
+.bread-details {
+  font-family: "Roboto";
+  line-height: 1.7em; 
+  font-size: 14px;
+}
+#main-page {
+  background-image: url(../assets/images/bread-baking-background.jpg), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.3));
+  background-blend-mode: overlay;
+  background-size:100% 100%;
+}
+
+#main-large-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#content-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.74);
+}
+
+button{
+  display: flex;
+}
+
+#bread-wheel-page{
+  /* background-image: url(../assets/images/wheat-field-background.jpg);
+  background-size:100% 100%; */
+}
+
+
 .circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  width: 20em;
-  height: 20em;
+  width: 40em;
+  height: 40em;
   border-radius: 50%;
+  background: white;
   padding: 0;
   list-style: none;
-  margin: 5em auto 0;
-  border: solid 5px tomato;
-  transition: 1s;
-  transition-timing-function: linear;
+  margin-right: 11em;
+  /* border: solid 5px tomato; */
+  transition: transform 0.4s cubic-bezier(0.95, 0.05, 0.795, 0.035);
 }
 /* line 17, ../sass/circle.scss */
 .circle-container > * {
   display: block;
   position: absolute;
-  top: 50%;
+  /* top: 50%;
   left: 50%;
-  margin: -3em;
-  width: 6em;
-  height: 6em;
+  margin: -3em; */
+  width: 120px;
+  height: 120px;
 }
 /* line 30, ../sass/circle.scss */
 .circle-container > *:nth-of-type(1) {
-  transform: rotate(0deg) translate(10em) rotate(0deg);
+  transform: rotate(0deg) translate(13em) rotate(0deg);
 }
 /* line 30, ../sass/circle.scss */
 .circle-container > *:nth-of-type(2) {
-  transform: rotate(60deg) translate(10em) rotate(-60deg);
+  transform: rotate(60deg) translate(13em) rotate(-60deg);
 }
 /* line 30, ../sass/circle.scss */
 .circle-container > *:nth-of-type(3) {
-  transform: rotate(120deg) translate(10em) rotate(-120deg);
+  transform: rotate(120deg) translate(13em) rotate(-120deg);
 }
 /* line 30, ../sass/circle.scss */
 .circle-container > *:nth-of-type(4) {
-  transform: rotate(180deg) translate(10em) rotate(-180deg);
+  transform: rotate(180deg) translate(13em) rotate(-180deg);
 }
 /* line 30, ../sass/circle.scss */
 .circle-container > *:nth-of-type(5) {
-  transform: rotate(240deg) translate(10em) rotate(-240deg);
+  transform: rotate(240deg) translate(13em) rotate(-240deg);
 }
 /* line 30, ../sass/circle.scss */
 .circle-container > *:nth-of-type(6) {
-  transform: rotate(300deg) translate(10em) rotate(-300deg);
+  transform: rotate(300deg) translate(13em) rotate(-300deg);
 }
+
+
 
 /* line 44, ../sass/circle.scss */
 .circle-container img {
+  z-index: 5;
   display: block;
   /* max-width: 100%; */
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  /* filter: grayscale(100%); */
-  border: solid 5px tomato;
-  transition: 1s;
-  transition-timing-function: linear;
+  filter: grayscale(100%);
+  /* border: solid 5px tomato; */
+  transition: transform 0.4s cubic-bezier(0.95, 0.05, 0.795, 0.035);
 }
-/* line 52, ../sass/circle.scss */
-/* .circle-container img:hover {
-  filter: grayscale(0);
-} */
+
+
+#bread-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22em;
+  height: 30em;
+}
+
+#up-arrow {
+
+}
+
+#down-arrow{
+
+}
+
+#carousel-strip {
+  display: flex;
+  flex-direction: column;
+  /* transition: transform 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86); */
+  transition-delay: .2s;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  	/* YOUR CODE HERE */
+}
+
+
+.carousel-section {
+  height: 21em;
+  padding: 2em;
+  position: relative;
+  overflow: hidden;
+	/* YOUR CODE HERE */
+}
+
+
+#carousel-container {
+	display: flex;
+	background-color: grey;
+	height: 25em;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+#bread-pairing-page{
+  /* background-image: url(../assets/images/cheese-background.jpg), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.3)); */
+  background-blend-mode: overlay;
+  background-size:100% auto;
+  
+}
+
+.breads img, .cheeses img{
+  height: 130px;
+  width: 130px;
+  display: block;
+}
+
+
+.pairing-strip{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.pairing-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.item-overlay {
+  background:  rgba(0,0,0,0.5);
+  position: absolute;
+  height: 130px;
+  width: 130px;
+  color: white;
+  font-size: 28px;
+  text-align: center;
+  line-height: 110px;
+  /* visibility: hidden; */
+}
+
+
+.direction-arrow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  font-size: 40px;
+}
+.direction-arrow:hover {
+  transform: scale(1.2) translateZ(0);
+}
+
+
+.breads, .cheeses{
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+
+/* Pre-render the bigger shadow, but hide it */
+.breads::after, .cheeses::after {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Transition to showing the bigger shadow on hover */
+.breads:hover::after, .cheeses:hover::after {
+  opacity: 1;
+}
+
+.breads:hover, .cheeses:hover, .hover {
+  transform: scale(1.35, 1.35);
+}

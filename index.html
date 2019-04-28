@@ -2,38 +2,128 @@
 <html>
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/scripts/fullpage.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
 
+    <script type="text/javascript" src="assets/scripts/fullpage.js"></script>
 
     <link rel="stylesheet" type="text/css" href="stylesheets/fullpage.css" />
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
     
-
-    <title>Index</title>
+    <title>Gluten</title>
 </head>
 
 <body>
         <div id="fullpage">
-                <div class="section">One</div>
-                <div class="section">
-                    <div class="slide" data-anchor="slide1">Two 1</div>
-                    <div class="slide" data-anchor="slide2">Two 2</div>
+                <div class="section" data-anchor="mainPage" id="main-page">
+                    <div id="main-large-logo">
+                        <img src="assets/images/large gluten logo.svg">
+                    </div>
                 </div>
-                <div class="section">Three</div>
-                <div class="section">Four</div>
+                <div class="section" data-anchor="breadWheel" id="bread-wheel-page"> 
+                        <div id="content-container">
+                            <ul class='circle-container' id ="circle-container" >
+                                <li class='bread-wheel-container'><img class="bread-wheel-image" id="img0" src="assets/images/baguette.jpg"></li>
+                                <li class='bread-wheel-container'><img class="bread-wheel-image" id="img1" src="assets/images/bun.jpg"></li>
+                                <li class='bread-wheel-container'><img class="bread-wheel-image" id="img2" src="assets/images/challah.jpg"></li>
+                                <li class='bread-wheel-container'><img class="bread-wheel-image" id="img3" src="assets/images/injera.jpg"></li>
+                                <li class='bread-wheel-container'><img class="bread-wheel-image" id="img4" src="assets/images/brazillianBread.png"></li>
+                                <li class='bread-wheel-container'><img class="bread-wheel-image" id="img5" src="assets/images/naan.jpg"></li>
+                            </ul>
+                            <div id="bread-detail-container">
+                                <div class="direction-arrow" id="up-arrow">
+                                        &#9650;
+                                </div>
+
+                                <div id="carousel-container"> 
+                                    <div id="carousel-strip">
+                                        <div class="carousel-section" id="carousel0">
+                                            <div class="bread-title">Baguette</div><p>
+                                            <div class="bread-details"> A baguette is a long, thin loaf of French bread. 
+                                                Although the word "baguette" was not used to refer to a type of bread until 1920, the word itself simply means "wand", "baton" or "stick".
+                                            <p>
+                                                According to a legend, it was Napoleon who asked for the baguette to have a long shape. This made it easier for his soldiers to carry their bread around down their pants while in the battlefield.
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div class="carousel-section" id="carousel1">
+                                            <div class="bread-title">包子（Baozi）</div>
+                                            <p>
+                                            <div class="bread-details"> 
+                                            Baozi or bao is a Chinese bun with a filling of meat or vegetables, not to be confused with 馒头（mantou）which is also a type of Chinese steamed bun but without any filling.
+                                            <p>According to legend, a Chinese general needed to lead his army across a raging river but the people on the other side of the river demanded him to seve the heads of fifty of his men. Instead, the general decided to use large, meat-filled balls of dough as a replacement. 
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-section" id="carousel2">
+                                            <div class="bread-title">Challah</div>
+                                            <p>
+                                            <div class="bread-details"> 
+                                            Challah, plural: challot or challos is a special bread in Jewish cuisine, usually braided and typically eaten on ceremonial occasions such as Sabbath and major Jewish holidays. 
+                                             <p>Braided challah bread are the most common because the braids look like arms intertwined, symbolize love. Poppy and sesame seeds sprinkled on the bread also symbolize the manna that fell from heaven.
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-section" id="carousel3">
+                                            <div class="bread-title">ənǧära እንጀራ (Injera)</div>
+                                            <p>
+                                            <div class="bread-details"> 
+                                            Injera is a sourdough-risen flatbread is the national dish of Ethiopia and Eritrea and often both the serving platter and utensil for a meal. 
+                                            </div>
+                                        </div>
+                                        
+
+                                        <div class="carousel-section" id="carousel4">
+                                            <div class="bread-title">Pão de queijo</div>
+                                            <p>
+                                            <div class="bread-details"> 
+                                            Pão de queijo or Brazilian cheese bread is a small, baked cheese roll, a popular snack and breakfast food in Brazil. 
+                                            <p>Pão de queijo originated from African slaves like many other Brazilian foods. Slaves would soak and peel the cassava root and make bread rolls from it.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-section" id="carousel5">
+                                            <div class="bread-title"> नान (Naan)</div>
+                                            <p>
+                                            <div class="bread-details"> 
+                                                Naan is leavened, tandoor-baked flatbread native to India and the name comes from the Persian word, non, for bread. It resembles pita bread but unlike pita, it has yogurt, milk, sometimes eggs or butter which makes it softer than pita bread. 
+                                            <p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="direction-arrow" id="down-arrow">
+                                        &#9660;
+                                </div>
+                            </div>
+
+                        </div>
+                </div>
+                    
+           
+                <div class="section" data-anchor="breadParing" id="bread-pairing-page">
+                    <div id="pairing-container">
+                        
+                        <div class="pairing-strip">
+                            <div class="breads" id="sourdough"><div class="item-overlay">Sourdough</div><img src="assets/images/sourdoughBread.jpg"></div>
+                            <div class="breads" id="baguette"><div class="item-overlay">Baguette</div><img src="assets/images/baguetteBread.jpg"></div>
+                            <div class="breads" id="rye"><div class="item-overlay">Rye</div><img src="assets/images/ryeBread.jpg"></div>
+                            <div class="breads" id="wheat"><div class="item-overlay">Wheat</div><img src="assets/images/wheatBread.jpg"></div>
+                            <div class="breads" id="brioche"><div class="item-overlay">Brioche</div><img src="assets/images/briocheBread.jpg"></div>
+                        </div>
+
+                        <div class="pairing-strip">
+                            <div class="cheeses" id="swiss"><div class="item-overlay">Swiss</div><img src="assets/images/swisscheese.jpg"></div>
+                            <div class="cheeses" id="pepperjack"><div class="item-overlay">Pepperjack</div><img src="assets/images/pepperjackcheese.png"></div>
+                            <div class="cheeses" id="brie"><div class="item-overlay">Brie</div><img src="assets/images/briecheese.JPG"></div>
+                            <div class="cheeses" id="cheddar"><div class="item-overlay">Cheddar</div><img src="assets/images/cheddarcheese.jpeg"></div>
+                            <div class="cheeses" id="gouda"><div class="item-overlay">Gouda</div><img src="assets/images/guadacheese.jpg"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-        <ul class='circle-container' id ='circle-container' >
-            <li><img class="image" src='assets/images/baguette.jpg'></li>
-            <li><img class="image" src='assets/images/bun.jpg'></li>
-            <li><img class="image" src='assets/images/challah.jpg'></li>
-            <li><img class="image" src='assets/images/injera.jpg'></li>
-            <li><img class="image" src='assets/images/bagel.jpg'></li>
-            <li><img class="image" src='assets/images/naan.jpg'></li>
-        </ul>
-
-        <button onclick="rotate()">Click me</button>
 
     <script type="text/javascript" src="assets/scripts/script.js"></script>
 
