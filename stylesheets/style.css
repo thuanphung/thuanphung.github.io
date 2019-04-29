@@ -49,8 +49,8 @@ button{
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 40em;
-  height: 40em;
+  width: 31em;
+  height: 31em;
   border-radius: 50%;
   background: white;
   padding: 0;
@@ -233,4 +233,16 @@ button{
 
 .breads:hover, .cheeses:hover, .hover {
   transform: scale(1.35, 1.35);
+}
+
+.page-title{
+  text-align: center;
+  font-size: 3em;
+  font-family: "Playfair Display";
+}
+
+.page-instruction{
+  text-align: center;
+  font-size: 1em;
+  font-family: "Roboto";
 }

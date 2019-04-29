@@ -16,7 +16,7 @@ let largeImageWheelDimension = "220px";
 function addImageLayover(direction) {
   images[indexOfFocus % 6].style.filter = 'grayscale(1)';
   // images[indexOfFocus % 6].style.border = 'none'; 
-  images[indexOfFocus % 6].style.transform -= 'scale(2,2) translateX(3em)';
+  images[indexOfFocus % 6].style.transform -= 'scale(2,2) translateX(2em)';
 
   if (indexOfFocus == 0 && direction == -1) {
       indexOfFocus = 1;
@@ -30,7 +30,7 @@ function addImageLayover(direction) {
 
   images[indexOfFocus % 6].style.filter = 'grayscale(0)';
   // images[indexOfFocus % 6].style.border = 'solid 5px tomato'; 
-  images[indexOfFocus % 6].style.transform += 'scale(2,2) translateX(3em)';
+  images[indexOfFocus % 6].style.transform += 'scale(2,2) translateX(2em)';
   // images[indexOfFocus % 6].style.width = largeImageWheelDimension; 
   // images[indexOfFocus % 6].style.height= largeImageWheelDimension; 
   // imageContainers[indexOfFocus % 6].style.width = largeImageWheelDimension; 
@@ -58,12 +58,10 @@ function rotate(direction) {
 $(document).ready(function() {
   const distanceToNextImage =  -$(".carousel-section").height() + (-2 * parseInt($(".carousel-section").css('padding-top')));
 
-  // var height = $(".circle-container").width();
 
-  // $(".circle-container").height(height);
 
   images[indexOfFocus % 6].style.filter = 'grayscale(0)';
-  images[indexOfFocus % 6].style.transform += 'scale(2,2) translateX(3em)';
+  images[indexOfFocus % 6].style.transform += 'scale(2,2) translateX(2em)';
 
   $('#fullpage').fullpage({
     anchors:['mainPage','breadWheelPage','breadGame','breadPairing'],
